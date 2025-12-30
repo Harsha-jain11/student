@@ -2,7 +2,15 @@ import sys
 
 
 def main():
-    name = sys.argv[9]
+    if len(sys.argv) != 7:
+        print("Usage:")
+        print(
+            "docker run student-image <name> <department> "
+            "<semester> <mark1> <mark2> <mark3>"
+        )
+        return
+
+    name = sys.argv[1]
     department = sys.argv[2]
     semester = sys.argv[3]
 
@@ -25,7 +33,7 @@ def main():
     else:
         grade = "F"
 
-    print("===== STUDENT DETAILS =====")
+    print("\n===== STUDENT DETAILS =====")
     print("Name       :", name)
     print("Department :", department)
     print("Semester   :", semester)
