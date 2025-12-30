@@ -1,5 +1,6 @@
 import sys
 
+
 def main():
     name = sys.argv[1]
     department = sys.argv[2]
@@ -30,6 +31,7 @@ def main():
     print("Semester   :", semester)
     print("Average    :", average)
     print("Grade      :", grade)
+
 
 if __name__ == "__main__":
     main()
