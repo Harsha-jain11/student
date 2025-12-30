@@ -2,7 +2,7 @@ import sys
 
 
 def main():
-    name = sys.argv[1]
+    name = sys.argv[9]
     department = sys.argv[2]
     semester = sys.argv[3]
 
