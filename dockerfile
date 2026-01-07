@@ -5,6 +5,6 @@ WORKDIR /Structured_enquiry
 COPY . .
 
 RUN pip install pytest
-RUN pytest
+RUN pytest -v
 
 CMD ["python", "student.py"]
